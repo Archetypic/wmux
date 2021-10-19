@@ -1,0 +1,63 @@
+C-f     Move forward a character
+C-b     Move backward a character
+
+M-f     Move forward a word
+M-b     Move backward a word
+
+C-n     Move to next line
+C-p     Move to previous line
+
+C-a     Move to beginning of line
+C-e     Move to end of line
+
+M-a     Move back to beginning of sentence
+M-e     Move forward to end of sentence
+
+M-<     Move to beginning of whole text
+M->     Move to end of whole text
+
+C-u     Repeat count
+C-g     Stop command
+
+C-x 1   Kill all other windows
+
+<DEL>   Delete character just before the cursor
+C-d     Delete next character after the cursor
+
+M-<DEL> Kill the word immediately before the curose
+M-d     Kill the next word after the cursor
+
+C-k     Kill from the cursor position to end of line
+M-k     Kill to the end of the current sentence
+
+C-<SPC> Set Marker
+C-W     Kill visual selection
+
+C-y     Yank
+M-y
+
+C-/     Undo
+
+C-x C-f Find a file
+C-x C-s Save the file
+
+C-x C-b List buffers
+C-x s   Save some buffers
+C-x b   Switch buffer
+C-x C-c Quit GNU Emacs
+C-x     Character eXtend
+M-x     Named command eXtend
+
+C-h m   View documentation on major mode
+
+C-s     Invoke I-search
+
+C-x o   Switch focused window
+C-x 2   Split frame into two windows
+
+C-h c   Help: Command bound to key
+C-h k   Help: Information about command
+C-h f   Help: Describe a function
+C-h a   Help: Command Apropos
+C-h i   Help: Read Infos
+Autosave files prefixed with #
