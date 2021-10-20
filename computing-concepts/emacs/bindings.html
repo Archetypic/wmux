@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+
+    <title>
+      Emacs Bindings
+    </title>
+
+  </head>
+
+  <body>
+    <h2>Emacs Bindings</h2>
+
+    <table>
+      <tr>
+	<th>Command</th>
+	<th>Default Key Binding</th>
+	<th>Description</th>
+	<th>Command format</th>
+      </tr>
+      <tr>
+	<td><code>forward-char</code></td>
+	<td>C-f</td>
+	<td>Move point <em>N</em> characters forward</td>
+	<td>(forward-char &optional <em>N</em>)
+      </tr>
+      <tr>
+	<td><code>backward-char</code></td>
+	<td>C-b</td>
+	<td>Move point <em>N</em> characters backward</td>
+	<td>(backward-char &optional <em>ARG</em>)
+      </tr>
+      <tr>
+	<td><code>forward-word</code></td>
+	<td>M-f<br>ESC &ltright&gt</td>
+	<td>Move point <em>ARG</em> words forward</td>
+	<td>(forward-ward &optional <em>ARG</em>)</td>
+      </tr>
+      <tr>
+	<td><code>backward-word</code></td>
+	<td>M-b<br>ESC &ltleft&gt</td>
+	<td>Move point <em>ARG</em> words backward</td>
+	<td>(backward-word &optional <em>ARG</em>)</td>
+      </tr>
+      <tr>
+	<td><code>next-line</code></td>
+	<td>C-n<br>&ltdown&gt</td>
+	<td>Move cursor vertically down <em>ARG</em> lines</td>
+	<td>(next-line &optional <em>ARG TRY-VSCROLL</em>)</td>
+      </tr>
+      <tr>
+	<td><code>previous-line</code></td>
+	<td>C-p<br>&ltup&gt</td>
+	<td>Move cursor vertically up <em>ARG</em> lines.</td>
+	<td>(previous-line &optional <em>ARG TRY-VSCROLL</em>)</td>
+      </tr>
+      <tr>
+	<td><code>move-beginning-of-line</code></td>
+	<td>C-a<br>&lthome&gt</td>
+	<td>Move point to beginning of current line as displayed.</td>
+	<td>(move-beginning-of-line <em>ARG</em>)</td>
+      </tr>
+      <tr>
+	<td><code>move-end-of-line</code></td>
+	<td>C-e<br>&ltend&gt</td>
+	<td>Move point to end of current line as displayed.</td>
+	<td>(move-end-of-line <em>ARG</em>)</td>
+      </tr>
+      <tr>
+	<td><code>backward-sentence</code></td>
+	<td>M-a</td>
+	<td>Move backward to start of sentence.</td>
+	<td>(backward-sentence &optional <em>ARG</em>)</td>
+      </tr>
+      <tr>
+	<td><code>forward-sentence</code></td>
+	<td>M-e</td>
+	<td>Move forward to next end of sentence.</td>
+	<td>(forward-sentence &optional <em>ARG</em>)</td>
+      </tr>
+      <tr>
+	<td><code>beginning-of-buffer</code></td>
+	<td>&ltbegin&gt<br>&ltC-home&gt<br>M-&gt<br>&ltmenu-bar&gt<br>&ltedit&gt<br>&ltgoto&gt<br>&ltbeg-of-buf&gt</td>
+	<td>Move point <em>N</em> characters forward</td>
+	<td>(beginning-of-buffer &optional <em>ARG</em>)</td>
+      </tr>
+      <tr>
+	<td><code>universal-argument</code></td>
+	<td>C-u</td>
+	<td>Begin a numeric argument for the following command.</td>
+	<td>(universal-argument)</td>
+      </tr>
+      <tr>
+	<td><code>keyboard-quit</code></td>
+	<td>C-g</td>
+	<td>Signal a &#39quit&#39 condition.</td>
+	<td>(keyboard-quit)</td>
+      </tr>
+      <tr>
+	<td><code>delete-other-windows</code></td>
+	<td>C-x 1<br>&ltmenu-bar&gt &ltfile&gt &ltone-window&gt</td>
+	<td>Make <em>WINDOW</em> fill its frame.</td>
+	<td>(delete-other-windows &optional <em>WINDOW</em>)</td>
+      </tr>
+      <tr>
+	<td><code>backward-kill-word</code></td>
+	<td>&ltC-backspace&gt<br>M-&ltDEL&gt</td>
+	<td>Kill characters backward unitl encountering the beginning of a word.</td>
+	<td>(backward-kill-word <em>ARG</em>)</td>
+      </tr>
+      <tr>
+	<td><code>kill-word</code></td>
+	<td>&ltC-delete&gt<br>M-d</td>
+	<td>Kill characters forward until encountering the end of a word.</td>
+	<td>(kill-word <em>ARG</em>)<td>
+      </tr>
+      <tr>
+	<td><code>kill-line</code></td>
+	<td>C-k<br>&ltdeleteline&gt</td>
+	<td>Kill the rest of the current line; if no nonblanks there, kill thru newline.</td>
+	<td>(kill-line &optional <em>ARG</em>)
+      </tr>
+      <tr>
+	<td><code>kill-sentence</code></td>
+	<td>M-k</td>
+	<td>Kill from point to end of sentence</td>
+	<td>(kill-sentence &optional <em>ARG</em>)</td>
+      </tr>
+  </body>
+
+  </html>

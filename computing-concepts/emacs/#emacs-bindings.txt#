@@ -49,7 +49,7 @@ C-x     Character eXtend
 M-x     Named command eXtend
 
 C-h m   View documentation on major mode
-
+q
 C-s     Invoke I-search
 
 C-x o   Switch focused window
@@ -67,4 +67,31 @@ M-m 	Move to the first non-whitespace character on the current line ('back-to-in
 M-i	Indent whitespace at point, up to the next tab stop ('tab-to-tab-stop')
 M-^ 	Merge the previous and the current line ('delete-indentation')
 C-M-\ 	Indent all the lines in the region ('indent-region')
-M-x untabify   Change all tabs in the region to spacesx
+M-x untabify   Change all tabs in the region to spaces
+
+C-t     Transpose two characters ('transpose-chars')
+M-t 	Transpose two words ('transpose-words')
+C-M-t 	Transpose two balanced expressions ('transpose-sexps')
+C-x C-t Transpose two lines ('transpose-lines')
+
+transpose-sentences
+trenspose-paragraphs
+transpose-regions
+
+M-- M-l Convert last word to lowercase
+M-- M-u Convert last word to all upper case
+M-- M-c Convert last word to lower case with capital initial
+
+M-$ 	Check and correct spelling of the work at point ('ispell-word')
+M-x ispell    	  Check and correct spelling of all words in the buffer.
+M-x ispell-buffer Check and correct spelling in the buffer.
+M-x ispell-region Check and correct spelling in the region.
+M-x ispell-message Check and correct spelling in a draft mail message, excluding cited material.
+M-x ispell-change-dictionary <RET> DICT <RET> Restart the spell-checker process, using DICT as the dictionary.
+M-x ispell-kill-ispell Kill the spell-checker subprocess
+
+M-<TAB>
+<ESC> <TAB>
+C-M-i	Complete the word before point based on the spelling dictionary.
+M-x flyspell-mode Enable Flyspell mode, which highlights all misspelled words.
+M-x flyspell-prog-mode Enable Flyspell mode for comments and strings only.
