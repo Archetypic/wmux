@@ -80,10 +80,15 @@
       </tr>
       <tr>
 	<td><code>beginning-of-buffer</code></td>
-	<td>&ltbegin&gt<br>&ltC-home&gt<br>M-&gt<br>&ltmenu-bar&gt<br>&ltedit&gt<br>&ltgoto&gt<br>&ltbeg-of-buf&gt</td>
-	<td>Move point <em>N</em> characters forward</td>
+	<td>&ltbegin&gt<br>&ltC-home&lt<br>M-&gt</td>
+	<td>Move point to the beginning of the buffer.</td>
 	<td>(beginning-of-buffer &optional <em>ARG</em>)</td>
       </tr>
+      <tr>
+	<td><code>end-of-buffer</code></td>
+	<td>&ltC-end&gt<br>M-&gt</td>
+	<td>Move point to end of the buffer.</td>
+	<td>(end-of-buffer &optional <i>ARG</i>)</td>
       <tr>
 	<td><code>universal-argument</code></td>
 	<td>C-u</td>
@@ -98,7 +103,7 @@
       </tr>
       <tr>
 	<td><code>delete-other-windows</code></td>
-	<td>C-x 1<br>&ltmenu-bar&gt &ltfile&gt &ltone-window&gt</td>
+	<td>C-x 1</td>
 	<td>Make <em>WINDOW</em> fill its frame.</td>
 	<td>(delete-other-windows &optional <em>WINDOW</em>)</td>
       </tr>
@@ -123,9 +128,74 @@
       <tr>
 	<td><code>kill-sentence</code></td>
 	<td>M-k</td>
-	<td>Kill from point to end of sentence</td>
+	<td>Kill from point to end of sentence.</td>
 	<td>(kill-sentence &optional <em>ARG</em>)</td>
       </tr>
+      <tr>
+	<td><code>set-marker-command</code></td>
+	<td>C-@<br>C-SPC</td>
+	<td>Set the mark where point is and activate it; or jump to the mark.</td>
+	<td>(set-mark-command <i>ARG</i>)</td>
+      </tr>
+      <tr>
+	<td><code>kill-region</code></td>
+	<td>C-w<br>&ltS-delete&gt</td>
+	<td>Kill ("cut") text between point and mark.</td>
+	<td>(kill-region <i>BEG END</i> &optional <i>REGION</i>)</td>
+      </tr>
+      <tr>
+	<td><code>yank</code></td>
+	<td>C-y<br>&ltS-insertchar&gt</td>
+	<td>Reinsert ("paste") the last strech of killed text.</td>
+	<td>(yank &optional <i>ARG</i>)</td>
+      </tr>
+      <tr>
+	<td><code>undo</code></td>
+	<td>C-_<br>&ltundo&gt<br>C-/<br>C-x u</td>
+	<td>Undo some previous changes</td>
+	<td>(undo &optional <i>ARG</i>)</td>
+      </tr>
+      <tr>
+	<td><code>find-file</code></td>
+	<td>&ltopen&gt<br>C-x C-f</td>
+	<td>Edit file FILENAME.</td>
+	<td>(find-file <i>FILENAME</i> &optional <i>WILDCARDS</i>)</td>
+      </tr>
+      <tr>
+	<td><code>save-buffer</code></td>
+	<td>C-x C-s</td>
+	<td>Save current buffer in visited file if modified.</td>
+	<td>(save-buffer &optional <i>ARG</i>)</td>
+      </tr>
+      <tr>
+	<td><code>list-buffers</code></td>
+	<td>C-x C-b</td>
+	<td>Display a list of existing buffers.</td>
+	<td>(list-buffers &optional <i>ARG</i>)</td>
+      </tr>
+      <tr>
+	<td><code>switch-to-buffer</code></td>
+	<td>C-x b</td>
+	<td>Display buffer <i>BUFFER-OR-NAME</i> in the selected window.</td>
+	<td>(switch-to-buffer <i>BUFFER-OR-NAME</i> &optional <i>NORECORD FORCE-SAME-WINDOW</i>)</td>
+      </tr>
+      <tr>
+	<td><code>save-buffers-kill-terminal</code></td>
+	<td>C-x C-c</td>
+	<td>Offer to save each buffer, then kill the current connection.</td>
+	<td>(save-buffers-kill-terminal &optional <i>ARG</i>)</td>
+      </tr>
+    </table>
+
+      <hr>
+      <h2>Most essential commands for mastering GNU Emacs</h2>
+      <tr>
+	<td><code>describe-mode</code></td>
+	<td>C-h m<br>&ltf1&gt m<br>&lthelp&gt m</td>
+	<td>Display documentation of current major mode and minor modes.</td>
+	<td>(describe-mode &optional <i>BUFFER</i></td>
+      </tr>
+    </table>
   </body>
 
 </html>
