@@ -80,7 +80,7 @@
       </tr>
       <tr>
 	<td><code>beginning-of-buffer</code></td>
-	<td>&ltbegin&gt<br>&ltC-home&lt<br>M-&gt</td>
+	<td>&ltC-home&gt<br>M-&gt</td>
 	<td>Move point to the beginning of the buffer.</td>
 	<td>(beginning-of-buffer &optional <em>ARG</em>)</td>
       </tr>
@@ -121,7 +121,7 @@
       </tr>
       <tr>
 	<td><code>kill-line</code></td>
-	<td>C-k<br>&ltdeleteline&gt</td>
+	<td>C-k</td>
 	<td>Kill the rest of the current line; if no nonblanks there, kill thru newline.</td>
 	<td>(kill-line &optional <em>ARG</em>)
       </tr>
@@ -145,19 +145,19 @@
       </tr>
       <tr>
 	<td><code>yank</code></td>
-	<td>C-y<br>&ltS-insertchar&gt</td>
+	<td>C-y</td>
 	<td>Reinsert ("paste") the last strech of killed text.</td>
 	<td>(yank &optional <i>ARG</i>)</td>
       </tr>
       <tr>
 	<td><code>undo</code></td>
-	<td>C-_<br>&ltundo&gt<br>C-/<br>C-x u</td>
+	<td>C-_<br>C-/<br>C-x u</td>
 	<td>Undo some previous changes</td>
 	<td>(undo &optional <i>ARG</i>)</td>
       </tr>
       <tr>
 	<td><code>find-file</code></td>
-	<td>&ltopen&gt<br>C-x C-f</td>
+	<td>C-x C-f</td>
 	<td>Edit file FILENAME.</td>
 	<td>(find-file <i>FILENAME</i> &optional <i>WILDCARDS</i>)</td>
       </tr>
@@ -187,14 +187,63 @@
       </tr>
     </table>
 
-      <hr>
-      <h2>Most essential commands for mastering GNU Emacs</h2>
+    <hr>
+    <h2>Most essential commands for mastering GNU Emacs</h2>
+    <table>
+      <tr>
+	<th>Command</th>
+	<th>Default Key Binding</th>
+	<th>Description</th>
+	<th>Command format</th>
+      </tr>
       <tr>
 	<td><code>describe-mode</code></td>
-	<td>C-h m<br>&ltf1&gt m<br>&lthelp&gt m</td>
+	<td>C-h m</td>
 	<td>Display documentation of current major mode and minor modes.</td>
-	<td>(describe-mode &optional <i>BUFFER</i></td>
+	<td>(describe-mode &optional <i>BUFFER</i>)</td>
       </tr>
+      <tr>
+	<td><code>apropos-command</code></td>
+	<td>C-h a</td>
+	<td>Show commands (interactively callable functions that match <i>PATTERN</i>.</td>
+	<td>(apropos-command <i>PATTERN</i> &optional <i>DO-ALL VAR-PREDICATE</i>)</td>
+      <tr>
+	<td><code>describe-key-briefly</code></td>
+	<td>C-h c</td>
+	<td>Print the name of the functions <i>KEY-LIST</i> invokes.</td>
+	<td>(describe-key-briefly <i>KEY-LIST</i> &optional <i>INSERT</i>)</td>
+      </tr>
+      <tr>
+	<td><code>describe-key</code></td>
+	<td>C-h k</td>
+	<td>Display documentation of the function invoked by <i>KEY-LIST</i>.</td>
+	<td>(describe-key <i>KEY-LIST</i> &optional <i>BUFFER</i>)</td>
+      </tr>
+      <tr>
+	<td><code>describe-function</code></td>
+	<td>C-h f</td>
+	<td>Display the full documentation of <i>FUNCTION</i> (a symbol).</td>
+	<td>(describe-function <i>FUNCTION</i>)</td>
+      </tr>
+      <tr>
+	<td><code>info</code></td>
+	<td>C-h i</td>
+	<td>Enter Info, the documentation browser.</td>
+	<td>(info &optional <i> FILE-OR-NODE BUFFER</i>)</td>
+      </tr>
+      <tr>
+	<td><code>info-emacs-manual</code></td>
+	<td>C-h r</td>
+	<td>Display the Emacs manual in Info mode.</td>
+	<td>(info-emacs-manual)</td>
+      </tr>
+      <tr>
+	<td><code>help-with-tutorial</code></td>
+	<td>C-h t</td>
+	<td>Select the Emacs learn-by-doing tutorial</td>
+	<td>(help-with-tutorial &optional <i> ARG DONT-ASK-FOR-REVERT</i>)</td>
+      </tr>
+
     </table>
   </body>
 
