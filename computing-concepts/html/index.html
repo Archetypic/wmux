@@ -82,6 +82,12 @@
 	<td>Used for longer quotes that take up an entire paragraph.</td>
       </tr>
 
+      <tr>
+	<td><code>&ltaddress&gt</code></td>
+	<td>Address</td>
+	<td>Contains the contact details for the author of the page.</td>
+      </tr>
+
       
       <table>
 	
@@ -120,9 +126,7 @@
         </tr>
 
         <tr>
-          <td>
-            <code>a</code>
-          </td>
+          <td><code>a</code></td>
           <td>anchor</td>
           <td>make hyperlink</td>
           <td>
@@ -203,8 +207,57 @@
 	  <td><q>I said this.</q></td>
 	</tr>
 
+	<tr>
+	  <td><code>&ltabbr&gt</code></td>
+	  <td>Abbreviation</td>
+	  <td>Specifies an abbreviation.</td>
+	  <td><code>&ltabbr title="National Aeronatics and Space Administration"&gtNASA&lt/abbr&gt</code></td>
+	  <td><abbr title="Professor">Prof</abbr></td>
+	</tr>
 
-      </table>
+	<tr>
+	  <td><code>&ltcite&gt</code></td>
+	  <td>Citation</td>
+	  <td>Cite a piece of literature.</td>
+	  <td><code>&ltcite&gtWar and Peace&lt/cite&gt</code></td>
+	  <td><cite>War and Peace</cite></td>
+	</tr>
+
+	<tr>
+	  <td><code>&ltdfn&gt</code></td>
+	  <td>Defining instance</td>
+	  <td>Indicates the defining instance of a new term.</td>
+	  <td><code>&ltdfn&gtUnknown word&lt/dfn&gt</code></td>
+	  <td>The <dfn>Unknown word</dfn> is confusing.</td>
+	</tr>
+
+	<tr>
+	  <td><code>&ltins&gt</code></td>
+	  <td>Insert</td>
+	  <td>Shows text that has been inserted into the document.</td>
+	  <td><code>The &ltins&gtbest&lt/ins&gt idea.</code></td>
+	  <td>The <ins>best</ins> idea.</td>
+	</tr>
+
+	<tr>
+	  <td><code>&ltdel&gt</code></td>
+	  <td>Delete</td>
+	  <td>Show text that has been deleted from the document.</td>
+	  <td><code>The &ltdel&gtworst&lt/del&gt idea.</code></td>
+	  <td>The <del>worst</del> idea.</td>
+	</tr>
+
+	<tr>
+	  <td><code>&lts&gt</code></td>
+	  <td>Strikethrough</td>
+	  <td>Indicates that corresponding text is no longer accurate or relevant but should not be deleted.</td>
+	  <td><code>The price is now &lts&gt$999&lt/s&gt $899.</code></td>
+	  <td>The price is now <s>$999</s> $899.</td>
+	</tr>
+	  
+
+
+	  </table>
 
   </body>
 
