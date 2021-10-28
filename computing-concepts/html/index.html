@@ -29,31 +29,31 @@
       </tr>
 
       <tr>    
-        <td><code>h1</code>&ndash;<code>h6</code></td>          
+        <td><code>&lth1</code>&ndash;<code>h6&gt</code></td>          
         <td>headings</td>       
         <td>include a heading (levels 1&ndash;6)</td>                
       </tr>
 
       <tr>
-        <td><code>p</code></td>
+        <td><code>&ltp&gt</code></td>
         <td>paragraph</td>
         <td>include a paragraph of text</td>
       </tr>
 
       <tr>
-        <td><code>table</code></td>
+        <td><code>&lttable&gt</code></td>
         <td>table</td>
         <td>include a table</td>
       </tr>
 
       <tr>
-        <td><code>tr</code></td>
+        <td><code>&lttr&gt</code></td>
         <td>table header</td>
         <td>make a table header</td>
       </tr>
 
       <tr>
-        <td><code>td</code></td>
+        <td><code>&lttd&gt</code></td>
         <td>table data</td>
         <td>include a table data cell</td>
       </tr>
@@ -101,7 +101,7 @@
       </tr>
 
       <tr>
-	<td><code>&ltul&gtc</code></td>
+	<td><code>&ltul&gt</code></td>
 	<td>Unordered list</td>
 	<td>Creates and unordered list.</td>
       </tr>
@@ -124,6 +124,21 @@
 	<td>Contains the definition.</td>
       </tr>
 
+      <tr>
+	<td><code>&ltfigure&gt</code></td>
+	<td>Figure</td>
+	<td>Contains images and their associated captions.</td>
+      </tr>
+
+      <tr>
+	<td><code>&ltfigcaption&gt</code></td>
+	<td>Caption for figures</td>
+	<td>Adds captions to image in &ltfigure&gt.</td>
+      </tr>
+
+      <tr>
+	<td><code>
+
 
     </table>
 
@@ -141,7 +156,7 @@
 
       <tr>
         <td>
-          <code>em</code>
+          <code>&ltem&gt</code>
         </td>
         <td>empahsized</td>
         <td>make emphasized text</td>
@@ -150,7 +165,7 @@
       </tr>
 
       <tr>
-        <th><code>strong</code></th>
+        <th><code>&ltstrong&gt</code></th>
         <td>strong</td>
         <td>make strong text</td>
         <td>
@@ -164,7 +179,7 @@
       </tr>
 
       <tr>
-        <td><code>a</code></td>
+        <td><code>&lta&gt</code></td>
         <td>anchor</td>
         <td>make hyperlink</td>
         <td>
@@ -172,11 +187,11 @@
 	    &lt;a href="https://learnenough.com/"&gt;Learn Enough&lt;/a&gt;
           </code>
         </td>
-        <td><a href="https://learnenough.com/">Learn Enough</a>
+        <td><a href="https://learnenough.com/">Learn Enough</a></td>
       </tr>
 
       <tr>
-        <td><code>img</code></td>
+        <td><code>&ltimg&gt</code></td>
         <td>image</td>
         <td>include an image</td>
         <td>
@@ -184,9 +199,7 @@
 	    &lt;img src="http://bit.ly/1MZAFuQ" alt="Micheal Hartl"&gt;
           </code>
         </td>
-        <td>
-          <img src="http://bit.ly/1MZAFuQ" alt="Micheal Hartl"&gt;
-               </td>
+        <td><img src="http://bit.ly/1MZAFuQ" alt="Micheal Hartl"&gt;</td>
       </tr>
 
       <tr>
@@ -292,8 +305,6 @@
 	<td><code>The price is now &lts&gt$999&lt/s&gt $899.</code></td>
 	<td>The price is now <s>$999</s> $899.</td>
       </tr>
-      
-
 
     </table>
 
