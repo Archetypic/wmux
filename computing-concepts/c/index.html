@@ -18,6 +18,7 @@
     <h1>Modern C</h1>
     
     <h2>Takeways (literal)</h2>
+    
     <ul>
       <li><b>Takeaway A</b> C and C++ are different: don't mix them, and don't mix them up.</li>
       <li><b>Takeaway B</b> Don't panic.</li>
@@ -35,11 +36,12 @@
       <li><b>Takeaway 0.2.3.4</b> For an array with <b>n</b> elements, the first element has index 0, and the last has index <b>n-1</b>.</li>
       <li><b>Takeaway 0.2.3.5</b> Each object or function must have exactly one definition.</li>
       <li><b>Takeaway 0.2.4.1</b> Domain iterations should be coded with a <b>for</b> statement.</li>
-      <li><b>Takeaway 0.2.4.2</b> The loop variable shoulbe be defined in the initial part of a <b>for</b>.
+      <li><b>Takeaway 0.2.4.2</b> The loop variable should be be defined in the initial part of a <b>for</b>.</li>
     </ul>
 
     <p>
-      Since C is compiled programming language, a compilier is required to translate theC text into binary code or an execuatable. Examples of compilers are gcc, clang, and c99.
+      Since C is compiled programming language, a compilier is required to translate theC text into binary code or an execuatable.
+      Examples of compilers are gcc, clang, and c99.
     </p>
 
     <h2>Punctuation in C</h2>
@@ -55,6 +57,7 @@
     </ul>
 
     <a href="https://git.wmux.xyz/Pamux.git/tree/Modern_C/listings/listing1.1/listing1_1.c">Referrering C program</a>
+    
     <p>
       Brackets are always paired. <code>/* ... */</code> is the comment sytax.
       Comments are ignored by the compiler.
@@ -65,10 +68,36 @@
       <b>main</b> and <b>printf</b> are functions.
       Constants, such as <b>EXIT_SUCCESS</b>.
       <b>main</b> must always be present, because it is the staring point of any program's execution.
-      Operators in C cab be utilized for initialization and assignment, comparison, increment and decrment a variable, and perform arithmetic on numbers.
+      Operators in C can be utilized for initialization and assignment, comparison, increment and decrment a variable, and perform arithmetic on numbers.
+    </p>
+
+    <p>
+      A <b>declaration</b> specifies what the identifier represents.
+      An <b>array</b> is an aggregate of several items of the same type.
+      <b>Variables</b> are named items that store <b>values</b>.
+      The <b>scope</b> is a part of the program where an identifier is <b>visible</b>.
+      A <b>block scope</b> is delimited by a block such as <code>{ ... }</code>.
+      A file scope is not delimited by <code>{ ... }</code> and its identifiers are referred to as <i>globals</i>.
+      An <b>intialization</b> is a grammatical construct that augments a declaration and provides an initial value for the object.
+      <b>Statements</b> are instructions that tell the compilier what to do with idenifiers that have been declared thus far.
+    </p>
+
+    <p>
+      Within a for-statement, the code that is repeated is called the <b>loop body</b>; it is the <code>{ ... }</code> block that follows the <b>for</b> <code>( ... )</code>.
+      Inside of the <code>( ... )</code> contains the declaration, definition, and initializer.
+      The <b>loop condition</b>, <code> i &lt 5</code>, specifies the duration the <b>for</b> iteration should continue.
+      It thus keeps iterating as long as i is less than 5.
+      <code>++i</code> is executed after each iteration.
+      It increases the value of i by 1 each iteration.
+    </p>
+
+    <p>
+      <b>Function calls</b> are special statements that suspend the execution of the current function and then hand over control to the named function.
+      <b>Function return</b> tells <b>main</b> function to return to the statement that it was called from once it's done.
     </p>
     
     
   </body>
 
 </html>
+
