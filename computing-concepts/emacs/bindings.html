@@ -90,6 +90,13 @@
 	<td>Move forward to next end of sentence.</td>
 	<td>(forward-sentence &optional <em>ARG</em>)</td>
       </tr>
+
+      <tr>
+	<td><code>back-to-indentation</code></td>
+	<td>M-m</td>
+	<td>Move point to the first non-whitespace character on this line.</td>
+	<td>(back-to-indentation)</td>
+      </tr>
       
       <tr>
 	<td><code>beginning-of-buffer</code></td>
@@ -103,6 +110,48 @@
 	<td>&ltC-end&gt<br>M-&gt</td>
 	<td>Move point to end of the buffer.</td>
 	<td>(end-of-buffer &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>forward-sexp</code></td>
+	<td>C-M-f</td>
+	<td>Move forward across one balanced expression (sexp).</td>
+	<td>(forward-sexp &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>backward-sexp</code></td>
+	<td>C-M-b</td>
+	<td>Move backward across one balanced expression (sexp).</td>
+	<td>(backward-sexp &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>down-list</code></td>
+	<td>C-M-d</td>
+	<td>Move forward down one level of perentheses.</td>
+	<td>(down-list &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>backward-up-list</code></td>
+	<td>C-M-u</td>
+	<td>Move backward out of one level of parentheses.</td>
+	<td>(backward-up-list &optional <i>ARG ESCAPE-STRINGS NO-SYNTAX-CROSSING</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>forward-list</code></td>
+	<td>C-M-n</td>
+	<td>Move forward across one balanced group of parentheses.</td>
+	<td>(forward-list &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>backward-list</code></td>
+	<td>C-M-p</td>
+	<td>Move backward across one balanced group of parentheses.</td>
+	<td>(backward-list &optional ARG)</td>
       </tr>
       
       <tr>
@@ -300,7 +349,51 @@
 	<td>Kill the current buffer and delete the selected window.</td>
 	<td>(kill-buffer-and-window)</td>
       </tr>
-      
+
+      <tr>
+	<td><code>make-frame-command</code></td>
+	<td>C-x 5 2</td>
+	<td>Make a new frame, on the same terminal as the selected frame.</td>
+	<td>(make-frame-command)</td>
+      </tr>
+
+      <tr>
+	<td><code>switch-to-buffer-other-frame</code></td>
+	<td>C-x 5 b</td>
+	<td>Switch to buffer <i>BUFFER-OR-NAME</i> in another frame.</td>
+	<td>(switch-to-buffer-other-frame <i>BUFFER-OR-NAME</i> &optional <i>NORECORD</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>delete-frame</code></td>
+	<td>C-x 5 0</td>
+	<td>Delete <i>FRAME</i>, permanently eliminating it from use.</td>
+	<td>(delete-frame &optional <i>FRAME FORCE</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>delete-other-frames</code></td>
+	<td>C-x 5 1</td>
+	<td>Delete all frames on <i>FRAME</i>'s terminal, except <i>FRAME</i>.</td>
+	<td>(delete-other-frames &optional <i>FRAME</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>find-file-other-frame</code></td>
+	<td>C-x 5 C-f</td>
+	<td>Edit file <i>FILENAME</i>, in another frame.</td>
+	<td>(find-file-other-frame <i>FILENAME</i> &optional <i>WILDCARDS</i>.)</td>
+      </tr>
+
+      <tr>
+	<td><code>dired-other-frame</code></td>
+	<td>C-x 5 d</td>
+	<td>"Edit" directory <i>DIRNAME</i>. Like 'dired' but makes a new frame.</td>
+	<td>(dired-other-frame <i>DIRNAME</i> &optional <i>SWITCHES</i>)</td>
+      </tr>
+
+      <tr>
+	
     </table>
 
     <hr>
@@ -367,6 +460,13 @@
 	<td>C-h t</td>
 	<td>Select the Emacs learn-by-doing tutorial</td>
 	<td>(help-with-tutorial &optional <i> ARG DONT-ASK-FOR-REVERT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>display-buffer-other-frame</code></td>
+	<td>C-x 5 C-o</td>
+	<td>Display buffer <i>BUFFER</i> preferably in another frame.</td>
+	<td>(display-buffer-other-frame <i>BUFFER</i>)</td>
       </tr>
 
     </table>
