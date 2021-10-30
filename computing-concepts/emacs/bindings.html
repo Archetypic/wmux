@@ -153,7 +153,91 @@
 	<td>Move backward across one balanced group of parentheses.</td>
 	<td>(backward-list &optional ARG)</td>
       </tr>
-      
+
+      <tr>
+	<td><code>forward-paragraph</code></td>
+	<td>M-}</td>
+	<td>Move forward to end of paragraph.</td>
+	<td>(forward-paragraph &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>backward-paragraph</code></td>
+	<td>M-{</td>
+	<td>Move backward to start of paragraph.</td>
+	<td>(backward-paragraph &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>end-of-defunc</code></td>
+	<td>C-M-e</td>
+	<td>Move forward to next end of defun.</td>
+	<td>(end-of-defun &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>beginning-of-defun</code></td>
+	<td>C-M-a</td>
+	<td>Move backward to the beginning of a defun.</td>
+	<td>(beginning-of-defun &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>forward-page</code></td>
+	<td>C-x ]</td>
+	<td>Move forward to page boundary.</td>
+	<td>(forward-page &optional <i>COUNT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>backward-page</code></td>
+	<td>C-x [</td>
+	<td>Move backward to page boundary.</td>
+	<td>(backward-page &optional <i>COUNT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>scroll-up-command</code></td>
+	<td>C-v</td>
+	<td>Scroll text of selected window upward <i>ARG</i> lines; or near full screen if no <i>ARG</i>.</td>
+	<td>(scroll-up-command &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>scroll-down-command</code></td>
+	<td>M-v</td>
+	<td>Scroll text of selected window down <i>ARG</i> lines; or near full screen if no <i>ARG</i>.</td>
+	<td>(scroll-down-command &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>scroll-other-window</code></td>
+	<td>C-M-v</td>
+	<td>Scroll next window upward <i>ARG</i> lines; or near full screen if no <i>ARG</i>.</td>
+	<td>(scroll-other-window &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>scroll-other-window-down</code></td>
+	<td>C-M-S-v</td>
+	<td>Scroll next window downward <i>ARG</i> lines; or near full screen if no <i>ARG</i>.</td>
+	<td>(scroll-other-window-down &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>beginning-of-buffer</code></td>
+	<td>M-&lt</td>
+	<td>Move point to the beginning of the buffer.</td>
+	<td>(beginning-of-buffer &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>end-of-buffer</code></td>
+	<td>M-&gt</td>
+	<td>Move point of the end of the buffer.</td>
+	<td>(end-of-buffer &optional <i>ARG</i>)</td>
+      </tr>
+
       <tr>
 	<td><code>universal-argument</code></td>
 	<td>C-u</td>
@@ -393,7 +477,8 @@
       </tr>
 
       <tr>
-	
+	<td><code>m
+
     </table>
 
     <hr>
