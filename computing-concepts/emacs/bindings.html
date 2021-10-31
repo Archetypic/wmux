@@ -293,6 +293,58 @@
 	<td>Set the mark where point is and activate it; or jump to the mark.</td>
 	<td>(set-mark-command <i>ARG</i>)</td>
       </tr>
+
+      <tr>
+	<td><code>exchange-point-and-mark</code></td>
+	<td>C-x C-x</td>
+	<td>Put the mark where point is now, and point where the mark is now.</td>
+	<td>(exchange-point-and-mark &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>mark-paragraph</code></td>
+	<td>M-h</td>
+	<td>Put point at beginning of this paragraph, mark at end.</td>
+	<td>(mark-paragraph &optional <i>ARG ALLOW-EXTEND</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>mark-whole-buffer</code></td>
+	<td>C-x h</td>
+	<td>Put point at beginning and mark at end of buffer.</td>
+	<td>(mark-whole-buffer)</td>
+      </tr>
+
+      <tr>
+	<td><code>mark-defun</code></td>
+	<td>C-M-h</td>
+	<td>Put mark at end of this defun, point at beginning.</td>
+	<td>(mark-defun &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>mark-page</code></td>
+	<td>C-x C-p</td>
+	<td>Put mark at end of page, point at beginning.</td>
+	<td>(mark-page &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>mark-word</code></td>
+	<td>M-@</td>
+	<td>Set mark <i>ARG</i> words away from point.</td>
+	<td>(mark-word &optional <i>ARG ALLOW-EXTEND</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>mark-sexp</code></td>
+	<td>C-M-@<br>C-M-SPC</td>
+	<td>Set mark <i>ARG</i> sexps from point.</td>
+	<td>(mark-sexp &optional <i>ARG ALLOW-EXTEND</i>)</td>
+      </tr>
+
+      <tr>
+	<td>
       
       <tr>
 	<td><code>kill-region</code></td>
@@ -421,6 +473,13 @@
       </tr>
 
       <tr>
+	<td><code>display-buffer-other-frame</code></td>
+	<td>C-x 5 C-o</td>
+	<td>Display buffer <i>BUFFER</i> preferably in another frame.</td>
+	<td>(display-buffer-other-frame <i>BUFFER</i>)</td>
+      </tr>
+      
+      <tr>
 	<td><code>switch-to-buffer-other-window</code></td>
 	<td>C-x 4 b</td>
 	<td>Select the buffer specified by <i>BUFFER-OR-NAME</i> in another window.</td>
@@ -477,7 +536,83 @@
       </tr>
 
       <tr>
-	<td><code>m
+	<td><code>bookmark-set</code></td>
+	<td>C-x r m</td>
+	<td>Set a bookmark named <i>NAME</i> at the current location.</td>
+	<td>(bookmark-set &optional <i>NAME NO-OVERWRITE</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>bookmark-bmenu-list</code></td>
+	<td>C-x r l</td>
+	<td>Display a list of existing bookmarks.</td>
+	<td>(bookmark-bmenu-list)</td>
+      </tr>
+
+      <tr>
+	<td><code>bookmark-jump</code></td>
+	<td>C-x r b</td>
+	<td>Jump to a bookmark <i>BOOKMARK</i> (a point in some file).</td>
+	<td>(bookmark-jump <i>BOOKMARK</i> &optional <i>DISPLAY-FUNC</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>number-to-register</code></td>
+	<td>C-x r n</td>
+	<td>Store a number in a register.</td>
+	<td>(number-to-register <i>NUMBER REGISTER</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>copy-to-register</code></td>
+	<td>C-x r s<br>C-x r x</td>
+	<td>Copy region into register <i>REGISTER</i>.</td>
+	<td>(copy-to-register <i>REGISTER START END</i> &optional <i>DELETE-FLAG REGION</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>point-to-register</code></td>
+	<td>C-x r SPC<br>C-x r C-SPC</td>
+	<td>Store current location of point in register <i>REGISTER</i>.</td>
+	<td>(point-to-register <i>REGISTER</i> &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>increment-register</code></td>
+	<td>C-x r +</td>
+	<td>Augment concents of <i>REGISTER</i>.</td>
+	<td>(increment-register <i>PREFIX REGISTER</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>jump-to-register</code></td>
+	<td>C-x r j</td>
+	<td>Move point to location stored in a register.</td>
+	<td>(jump-to-register <i>REGISTER</i> &optional <i>DELETE</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>insert-register</code></td>
+	<td>C-x r i<br>C-x r j</td>
+	<td>Insert contents of register <i>REGISTER</i>.</td>
+	<td>(insert-register <i>REGISTER</i> &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>window-configuration-to-register</code></td>
+	<td>C-x r w</td>
+	<td>Store the window configuration of the selected from in register <i>REGISTER</i>.</td>
+	<td>(window-configuration-to-register <i>REGISTER</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>frameset-to-register</code></td>
+	<td>C-x r f</td>
+	<td>Store the current frameset in register <i>REGISTER</i>.</td>
+	<td>(frameset-to-register <i>REGISTER</i>)</td>
+      </tr>
+
+      
 
     </table>
 
@@ -547,12 +682,6 @@
 	<td>(help-with-tutorial &optional <i> ARG DONT-ASK-FOR-REVERT</i>)</td>
       </tr>
 
-      <tr>
-	<td><code>display-buffer-other-frame</code></td>
-	<td>C-x 5 C-o</td>
-	<td>Display buffer <i>BUFFER</i> preferably in another frame.</td>
-	<td>(display-buffer-other-frame <i>BUFFER</i>)</td>
-      </tr>
 
     </table>
     
