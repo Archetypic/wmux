@@ -498,7 +498,7 @@
 	<td>C-x 5 2</td>
 	<td>Make a new frame, on the same terminal as the selected frame.</td>
 	<td>(make-frame-command)</td>
-      </tr>
+      </tr>nn
 
       <tr>
 	<td><code>switch-to-buffer-other-frame</code></td>
@@ -611,6 +611,78 @@
 	<td>Store the current frameset in register <i>REGISTER</i>.</td>
 	<td>(frameset-to-register <i>REGISTER</i>)</td>
       </tr>
+
+      <tr>
+	<td><code>isearch-forward</code></td>
+	<td>C-s</td>
+	<td>Do incremental search forward.</td>
+	<td>(isearch-forward &optional <i>REGEXP-P NO-RECURSIVE-EDIT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>isearch-backward</code></td>
+	<td>C-r</td>
+	<td>Do incremental search backward.</td>
+	<td>(isearch-backward &optional <i>REGEXP-P NO-RECURSIVE-EDIT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>isearch-forward-regexp</code></td>
+	<td>C-M-s</td>
+	<td>Do incremental search forward for regular expression.</td>
+	<td>(isearch-forward-regexp &optional <i>NOT-REGEXP NO-RECURSIVE-EDIT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>isearch-backward-regexp</code></td>
+	<td>C-M-r</td>
+	<td>Do incremental search backward for regular expression.</td>
+	<td>(isearch-backward-regexp &optional <i>NOT-REGEXP NO-RECURSIVE-EDIT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>isearch-forward-word</code></td>
+	<td>M-s w</td>
+	<td>Do incremental search forward for a sequence of words.</td>
+	<td>(isearch-forward-word &optional <i>NOT-WORD NO-RECURSIVE-EDIT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>isearch-forward-symbol</code></td>
+	<td>M-s _</td>
+	<td>Do incremental search forward for a symbol.</td>
+	<td>(isearch-forward-symbol &optional <i>NOT-SYMBOL NO-RECURSIVE-EDIT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>isearch-forward-symbol-at-point</code></td>
+	<td>M-s .</td>
+	<td>Do incremental search forward for a symbol found near point.</td>
+	<td>(isearch-forward-symbol-at-point &optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>occur</code></td>
+	<td>M-s o</td>
+	<td>Show all lines in the current buffer containing a match for <i>REGEXP</i>.</td>
+	<td>(occur <i>REGEXP</i> &optional <i>NLINES REGION</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>next-error</code></td>
+	<td>C-x `<br>M-g n</td>
+	<td>Visit next 'next-error' message and corresponding source code.</td>
+	<td>(next-error &optional <i>ARG RESET</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>previous-error</code></td>
+	<td>M-g p</td>
+	<td>Visit previous 'next-error' message and corresponding source code.</td>
+	<td>(prevous-error &optional <i>N</i>)</td>
+      </tr>
+
+      
 
       
 
