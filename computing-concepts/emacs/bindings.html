@@ -258,6 +258,48 @@
 	<td>Make <em>WINDOW</em> fill its frame.</td>
 	<td>(delete-other-windows &optional <em>WINDOW</em>)</td>
       </tr>
+
+      <tr>
+	<td><code>delete-char</code></td>
+	<td>C-d</td>
+	<td>Delete the following <i>N</i> characters (pervious if <i>N</i> is negative).</td>
+	<td>(delete-char <i>N</i> &amp;optional <i>KILLFLAG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>delete-backward-char</code></td>
+	<td>DEL</td>
+	<td>Delete the previous <i>N</i> characters (following if <i>N</i> is negative).</td>
+	<td>(delete-backward-char <i>N</i> &amp;optional <i>KILLFLAG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kill-word</code></td>
+	<td>M-d</td>
+	<td>Kill characters forward unitl encountering the end of a word.</td>
+	<td>(kill-word <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>backward-kill-word</code></td>
+	<td>&lt;C-backspace&gt;</td>
+	<td>Kill characters backward until encuntering the beginning of a word.</td>
+	<td>(backward-kill-word <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kill-sexp</code></td>
+	<td>C-M-k</td>
+	<td>Kill the sexp (balanced expression) following the point.</td>
+	<td>(kill-sexp &amp;optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kill-whole-line</code></td>
+	<td>&lt;C-S-backspace&gt;</td>
+	<td>Kill current line.</td>
+	<td>(kill-whole-line &amp;optional <i>ARG</i>)</td>
+      </tr>
       
       <tr>
 	<td><code>backward-kill-word</code></td>
@@ -333,31 +375,49 @@
 	<td><code>mark-word</code></td>
 	<td>M-@</td>
 	<td>Set mark <i>ARG</i> words away from point.</td>
-	<td>(mark-word &optional <i>ARG ALLOW-EXTEND</i>)</td>
+	<td>(mark-word &amp;optional <i>ARG ALLOW-EXTEND</i>)</td>
       </tr>
 
       <tr>
 	<td><code>mark-sexp</code></td>
 	<td>C-M-@<br>C-M-SPC</td>
 	<td>Set mark <i>ARG</i> sexps from point.</td>
-	<td>(mark-sexp &optional <i>ARG ALLOW-EXTEND</i>)</td>
+	<td>(mark-sexp &amp;optional <i>ARG ALLOW-EXTEND</i>)</td>
       </tr>
 
       <tr>
-	<td>
-      
-      <tr>
 	<td><code>kill-region</code></td>
-	<td>C-w<br>&ltS-delete&gt</td>
+	<td>C-w<br>&lt;S-delete&gt;</td>
 	<td>Kill ("cut") text between point and mark.</td>
-	<td>(kill-region <i>BEG END</i> &optional <i>REGION</i>)</td>
+	<td>(kill-region <i>BEG END</i> &amp;optional <i>REGION</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kill-ring-save</code></td>
+	<td>M-w</td>
+	<td>Save the region as if killed, but don't kill it.</td>
+	<td>(kill-ring-save <i>BEG END</i> &amp;optional <i>REGION</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>append-next-kill</code></td>
+	<td>C-M-w</td>
+	<td>Cause the following command, if it kills, to add to previous kill.</td>
+	<td>(append-next-kill &amp;optional <i>INTERACTIVE</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>yank-pop</code></td>
+	<td>M-y</td>
+	<td>Replace just-yanked stretch of killed text with with a different stretch.</td>
+	<td>(yank-pop &amp;optional <i>ARG</i>)</td>
       </tr>
       
       <tr>
 	<td><code>yank</code></td>
 	<td>C-y</td>
 	<td>Reinsert ("paste") the last strech of killed text.</td>
-	<td>(yank &optional <i>ARG</i>)</td>
+	<td>(yank &amp;optional <i>ARG</i>)</td>
       </tr>
       
       <tr>
@@ -682,9 +742,85 @@
 	<td>(prevous-error &optional <i>N</i>)</td>
       </tr>
 
-      
+      <tr>
+	<td><code>move-to-window-line-top-bottom</code></td>
+	<td>M-r</td>
+	<td>Position repoint relative to window.</td>
+	<td>(move-to-window-line-top-bottom &amp;optional <i>ARG</i>)</td>
+      </tr>
 
-      
+      <tr>
+	<td><code>recenter-top-bottom</code></td>
+	<td>C-l</td>
+	<td>Scroll the window so that the current line is in the middle of the window.</td>
+	<td>(recenter-top-botton &amp;optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>reposition-window</code></td>
+	<td>C-M-l</td>
+	<td>Make the current definition and/or comment visible.</td>
+	<td>(resposition-window &amp;optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>set-goal-column</code></td>
+	<td>C-x C-n</td>
+	<td>Set the current horizontal position as a goal for C-n and C-p.</td>
+	<td>(set-goal-column <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>goto-line</code></td>
+	<td>M-g g<br>M-g M-g</td>
+	<td>Go to <i>LINE</i>, counting from line 1 at beginning of buffer.</td>
+	<td>(goto-line <i>LINE</i> &amp;optional <i>BUFFER</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>move-to-column</code></td>
+	<td>M-g TAB</td>
+	<td>Move point to column <i>COLUMN</i> in the current line.</td>
+	<td>(move-to-columns <i>COLUMN</i> &amp;optional <i>FORCE</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>goto-char</code></td>
+	<td>M-g c</td>
+	<td>Set point to <i>POSITION</i>, a number or marker.</td>
+	<td>(goto-char <i>POSITION</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>transpose-chars</code></td>
+	<td>C-t</td>
+	<td>Interchange characters around point, moving forward one character.</td>
+	<td>(transpose-chars <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>transpose-words</code></td>
+	<td>M-t</td>
+	<td>Interchange words around point, leaving point at end of them.</td>
+	<td>(transpose-words <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>transpose-sexps</code></td>
+	<td>C-M-t</td>
+	<td>Like C-t ('transpose-chars'), but applies to sexps.</td>
+	<td>(transpose-sexps <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>transpose-lines</code></td>
+	<td>C-x C-t</td>
+	<td>Exhange current line and previous line, leaving point after both.</td>
+	<td>(transpose-lines <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>
 
     </table>
 
