@@ -9,81 +9,81 @@
   </head>
 
   <body>
-    
+
     <h2>Emacs Bindings</h2>
 
     <table>
-      
+
       <tr>
 	<th>Command</th>
 	<th>Default Key Binding</th>
 	<th>Description</th>
 	<th>Command format</th>
       </tr>
-      
+
       <tr>
 	<td><code>forward-char</code></td>
 	<td>C-f</td>
 	<td>Move point <em>N</em> characters forward</td>
 	<td>(forward-char &optional <em>N</em>)
       </tr>
-      
+
       <tr>
 	<td><code>backward-char</code></td>
 	<td>C-b</td>
 	<td>Move point <em>N</em> characters backward</td>
 	<td>(backward-char &optional <em>ARG</em>)
       </tr>
-      
+
       <tr>
 	<td><code>forward-word</code></td>
 	<td>M-f<br>ESC &ltright&gt</td>
 	<td>Move point <em>ARG</em> words forward</td>
 	<td>(forward-ward &optional <em>ARG</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>backward-word</code></td>
 	<td>M-b<br>ESC &ltleft&gt</td>
 	<td>Move point <em>ARG</em> words backward</td>
 	<td>(backward-word &optional <em>ARG</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>next-line</code></td>
 	<td>C-n<br>&ltdown&gt</td>
 	<td>Move cursor vertically down <em>ARG</em> lines</td>
 	<td>(next-line &optional <em>ARG TRY-VSCROLL</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>previous-line</code></td>
 	<td>C-p<br>&ltup&gt</td>
 	<td>Move cursor vertically up <em>ARG</em> lines.</td>
 	<td>(previous-line &optional <em>ARG TRY-VSCROLL</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>move-beginning-of-line</code></td>
 	<td>C-a<br>&lthome&gt</td>
 	<td>Move point to beginning of current line as displayed.</td>
 	<td>(move-beginning-of-line <em>ARG</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>move-end-of-line</code></td>
 	<td>C-e<br>&ltend&gt</td>
 	<td>Move point to end of current line as displayed.</td>
 	<td>(move-end-of-line <em>ARG</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>backward-sentence</code></td>
 	<td>M-a</td>
 	<td>Move backward to start of sentence.</td>
 	<td>(backward-sentence &optional <em>ARG</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>forward-sentence</code></td>
 	<td>M-e</td>
@@ -97,14 +97,14 @@
 	<td>Move point to the first non-whitespace character on this line.</td>
 	<td>(back-to-indentation)</td>
       </tr>
-      
+
       <tr>
 	<td><code>beginning-of-buffer</code></td>
 	<td>&ltC-home&gt<br>M-&gt</td>
 	<td>Move point to the beginning of the buffer.</td>
 	<td>(beginning-of-buffer &optional <em>ARG</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>end-of-buffer</code></td>
 	<td>&ltC-end&gt<br>M-&gt</td>
@@ -244,14 +244,14 @@
 	<td>Begin a numeric argument for the following command.</td>
 	<td>(universal-argument)</td>
       </tr>
-      
+
       <tr>
 	<td><code>keyboard-quit</code></td>
 	<td>C-g</td>
 	<td>Signal a &#39quit&#39 condition.</td>
 	<td>(keyboard-quit)</td>
       </tr>
-      
+
       <tr>
 	<td><code>delete-other-windows</code></td>
 	<td>C-x 1</td>
@@ -300,35 +300,35 @@
 	<td>Kill current line.</td>
 	<td>(kill-whole-line &amp;optional <i>ARG</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>backward-kill-word</code></td>
 	<td>&ltC-backspace&gt<br>M-&ltDEL&gt</td>
 	<td>Kill characters backward unitl encountering the beginning of a word.</td>
 	<td>(backward-kill-word <em>ARG</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>kill-word</code></td>
 	<td>&ltC-delete&gt<br>M-d</td>
 	<td>Kill characters forward until encountering the end of a word.</td>
 	<td>(kill-word <em>ARG</em>)<td>
       </tr>
-      
+
       <tr>
 	<td><code>kill-line</code></td>
 	<td>C-k</td>
 	<td>Kill the rest of the current line; if no nonblanks there, kill thru newline.</td>
 	<td>(kill-line &optional <em>ARG</em>)
       </tr>
-      
+
       <tr>
 	<td><code>kill-sentence</code></td>
 	<td>M-k</td>
 	<td>Kill from point to end of sentence.</td>
 	<td>(kill-sentence &optional <em>ARG</em>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>set-marker-command</code></td>
 	<td>C-@<br>C-SPC</td>
@@ -412,49 +412,49 @@
 	<td>Replace just-yanked stretch of killed text with with a different stretch.</td>
 	<td>(yank-pop &amp;optional <i>ARG</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>yank</code></td>
 	<td>C-y</td>
 	<td>Reinsert ("paste") the last strech of killed text.</td>
 	<td>(yank &amp;optional <i>ARG</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>undo</code></td>
 	<td>C-_<br>C-/<br>C-x u</td>
 	<td>Undo some previous changes</td>
 	<td>(undo &optional <i>ARG</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>find-file</code></td>
 	<td>C-x C-f</td>
 	<td>Edit file FILENAME.</td>
 	<td>(find-file <i>FILENAME</i> &optional <i>WILDCARDS</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>save-buffer</code></td>
 	<td>C-x C-s</td>
 	<td>Save current buffer in visited file if modified.</td>
 	<td>(save-buffer &optional <i>ARG</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>list-buffers</code></td>
 	<td>C-x C-b</td>
 	<td>Display a list of existing buffers.</td>
 	<td>(list-buffers &optional <i>ARG</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>switch-to-buffer</code></td>
 	<td>C-x b</td>
 	<td>Display buffer <i>BUFFER-OR-NAME</i> in the selected window.</td>
 	<td>(switch-to-buffer <i>BUFFER-OR-NAME</i> &optional <i>NORECORD FORCE-SAME-WINDOW</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>save-buffers-kill-terminal</code></td>
 	<td>C-x C-c</td>
@@ -527,7 +527,7 @@
 
       <tr>
 	<td><code>display-buffer</code></td>
-        <td>C-x 4 C-o</td>
+	<td>C-x 4 C-o</td>
 	<td>Display <i>BUFFER-OR-NAME</i> in some window, without selecting it.</td>
 	<td>(display-buffer <i>BUFFER-OR-NAME</i> &optional <i>ACTION FRAME</i>)</td>
       </tr>
@@ -538,7 +538,7 @@
 	<td>Display buffer <i>BUFFER</i> preferably in another frame.</td>
 	<td>(display-buffer-other-frame <i>BUFFER</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>switch-to-buffer-other-window</code></td>
 	<td>C-x 4 b</td>
@@ -820,29 +820,159 @@
       </tr>
 
       <tr>
-	<td><code>
+		<td><code>fill-paragraph</code></td>
+	<td>M-q</td>
+	<td>Fill paragraph at or after point.</td>
+	<td>(fill-paragraph &amp;optional <i>JUSTIFY REGION</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>set-fill-column</code></td>
+	<td>C-x f</td>
+	<td>Set 'fill-column' to specified argument.</td>
+	<td>(set-fill-column <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>set-fill-prefix</code></td>
+	<td>C-x .</td>
+	<td>Set the fill prefix to the current line up to the point.</td>
+	<td>(set-fill-prefix)</td>
+      </tr>
+
+      <tr>
+	<td><code>comment-dwim</code></td>
+	<td>M-;</td>
+	<td>Call the comment command you want (Do What I Mean).</td>
+	<td>(comment-dwim <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>comment-line</code></td>
+	<td>C-x C-;</td>
+	<td>Comment or uncomment current line and leave point after it.</td>
+	<td>(comment-line <i>N</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>default-indent-new-line</code></td>
+	<td>C-M-j<br>M-j</td>
+	<td>Break line at point and indent.</td>
+	<td>(default-indent-new-line &amp;optional <i>SOFT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>query-replace-regexp</code></td>
+	<td>C-M-%</td>
+	<td>Replace some things after point matching <i>REGEXP</i> with <i>TO-STRING</i>.</td>
+	<td>(query-replace-regexp <i>REGEXP TO-STRING</i> &amp;optional <i>DELIMITED START END BACKWARD REGION-NONCONTINIGUOUS-P</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>query-replace</code></td>
+	<td>M-%</td>
+	<td>Replace some occurrences of <i>FROM-STRING</i> with <i>TO-STRING</i>.</td>
+	<td>(query-replace <i>FROM-STRING TO-STRING</i> &amp;optional <i>DELIMITED START END BACKWARD REGION-NONCONTIGUOUS-P</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>upcase-region</code></td>
+	<td>C-x C-u</td>
+	<td>Convert the region to upper case.</td>
+	<td>(upcase-region <i>BEG END</i> &amp;optional <i>REGION-NONCONTIGUOUS-P</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>downcase-region</code></td>
+	<td>C-x C-l</td>
+	<td>Convert the region to lower case.</td>
+	<td>(downcase-region <i>BEG END</i> &amp;optional <i>REGION-NONCONTIGUOUS-P</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>capitalize-word</code></td>
+	<td>M-c</td>
+	<td>Capitalize from point to end of word, moving over.</td>
+	<td>(capitalize-word <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>upcase-word</code></td>
+	<td>M-u</td>
+	<td>Convert to upper case from point to end of word, moving over.</td>
+	<td>(upcase-word <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>downcase-word</code></td>
+	<td>M-l</td>
+	<td>Convert to lower case from point to end of word, moving over.</td>
+	<td>(downcase-word <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>open-line</code></td>
+	<td>C-o</td>
+	<td>Insert a newline and leave point before it.</td>
+	<td>(open-line <i>N</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>delete-blank-lines</code></td>
+	<td>C-x C-o</td>
+	<td>On blank line, delete all surrounding blank lines, leaving just one.</td>
+	<td>(delete-blank-lines)</td>
+      </tr>
+
+      <tr>
+	<td><code>split-line</code></td>
+	<td>C-M-o</td>
+	<td>Split current line, moving portion beyond point vertically down.</td>
+	<td>(split-line &amp;optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>delete-indentation</code></td>
+	<td>M-^</td>
+	<td>Join this line to previous and fix up whitespace at join.</td>
+	<td>(delete-indentation &amp;optional <i>ARG BEG END</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>just-one-space</code></td>
+	<td>M-SPC</td>
+	<td>Delete all spaces and tabs around point, leaving one space (or <i>N</i> spaces).</td>
+	<td>(just-one-space &amp;optional <i>N</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>delete-horizontal-space</code></td>
+	<td>M-\</td>
+	<td>Delete all spaces and tabs around point.</td>
+	<td>(delete-horizontal-space &amp;optional <i>BACKWARD-ONLY</i>)</td>
+      </tr>
 
     </table>
 
     <hr>
     <h2>Most essential commands for mastering GNU Emacs</h2>
-    
+
     <table>
-      
+
       <tr>
 	<th>Command</th>
 	<th>Default Key Binding</th>
 	<th>Description</th>
 	<th>Command format</th>
       </tr>
-      
+
       <tr>
 	<td><code>describe-mode</code></td>
 	<td>C-h m</td>
 	<td>Display documentation of current major mode and minor modes.</td>
 	<td>(describe-mode &optional <i>BUFFER</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>apropos-command</code></td>
 	<td>C-h a</td>
@@ -854,35 +984,35 @@
 	<td>Print the name of the functions <i>KEY-LIST</i> invokes.</td>
 	<td>(describe-key-briefly <i>KEY-LIST</i> &optional <i>INSERT</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>describe-key</code></td>
 	<td>C-h k</td>
 	<td>Display documentation of the function invoked by <i>KEY-LIST</i>.</td>
 	<td>(describe-key <i>KEY-LIST</i> &optional <i>BUFFER</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>describe-function</code></td>
 	<td>C-h f</td>
 	<td>Display the full documentation of <i>FUNCTION</i> (a symbol).</td>
 	<td>(describe-function <i>FUNCTION</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>info</code></td>
 	<td>C-h i</td>
 	<td>Enter Info, the documentation browser.</td>
 	<td>(info &optional <i> FILE-OR-NODE BUFFER</i>)</td>
       </tr>
-      
+
       <tr>
 	<td><code>info-emacs-manual</code></td>
 	<td>C-h r</td>
 	<td>Display the Emacs manual in Info mode.</td>
 	<td>(info-emacs-manual)</td>
       </tr>
-      
+
       <tr>
 	<td><code>help-with-tutorial</code></td>
 	<td>C-h t</td>
@@ -892,7 +1022,7 @@
 
 
     </table>
-    
+
   </body>
 
 </html>
