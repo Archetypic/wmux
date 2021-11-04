@@ -952,6 +952,118 @@
 	<td>(delete-horizontal-space &amp;optional <i>BACKWARD-ONLY</i>)</td>
       </tr>
 
+      <tr>
+	<td><code>kmacro-start-macro-or-insert-counter</code></td>
+	<td>&lt;f3&gt;</td>
+	<td>Record subsequent keyboard inout, defining a keyboard macro.</td>
+	<td>(kmacro-start-macro-or-insert-counter <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-end-or-call-macro</code></td>
+	<td>&lt;f4&gt;</td>
+	<td>End kbd macro if currently being defined; else call last kbd macro.</td>
+	<td>(kmacro-end-or-call-macro <i>ARG</i> &amp;optional <i>NO-REPEAT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-start-macro</code></td>
+	<td>C-x (<br>C-x C-k s</td>
+	<td>Record subsequent keyboard input, defining a keyboard macro.</td>
+	<td>(kmacro-start-macro <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-end-macro</code></td>
+	<td>C-x )</td>
+	<td>Finish defining a keyboard macro.</td>
+	<td>(kmacro-end-macro <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-end-and-call-macro</code></td>
+	<td>C-x e</td>
+	<td>Call last keyboard macro, ending it first if currently being defined.</td>
+	<td>(kmacro-end-and-call-macro <i>ARG</i> &amp;optional <i>NO-REPEAT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-add-counter</code></td>
+	<td>C-x C-k C-a</td>
+	<td>Add the value of numeric prefix arg (prompt if missing) to 'kmacro-counter'.</td>
+	<td>(kmacro-add-counter <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-insert-counter</code></td>
+	<td>C-x C-k TAB</td>
+	<td>Insert current value of 'kmacro-counter', then increment it by <i>ARG</i>.</td>
+	<td>(kmacro-insert-counter <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-set-counter</code></td>
+	<td>C-x C-k C-c</td>
+	<td>Set the value of 'kmacro-counter' to <i>ARG</i>, or prompt for value if no argument.</td>
+	<td>(kmacro-set-counter <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-set-format</code></td>
+	<td>C-x C-k C-f</td>
+	<td>Set the format of 'kmacro-counter' to <i>FORMAT</i>.</td>
+	<td>(kmacro-set-format <i>FORMAT</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kbd-macro-query</code></td>
+	<td>C-x q</td>
+	<td>Query user during kbd macro execution.</td>
+	<td>(kdb-macro-query <i>FLAG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-cycle-ring-next</code></td>
+	<td>C-x C-k C-n</td>
+	<td>Move to next keyboard macro in keyboard macro ring.</td>
+	<td>(kmacro-cycle-ring-next &amp;optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-cycle-ring-previous</code></td>
+	<td>C-x C-k C-p</td>
+	<td>Move to previous keyboard macro in keyboard macro ring.</td>
+	<td>(kmacro-cycle-ring-previous &amp;optional <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-name-last-macro</code></td>
+	<td>C-x C-k n</td>
+	<td>Assign a name to the last keyboard macro defined.</td>
+	<td>(kmacro-name-last-macro <i>SYMBOL</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-bind-to-key</code></td>
+	<td>C-x C-k b</td>
+	<td>When not defining or executing a macro, offer to bind last macro to a key.</td>
+	<td>(kmacro-bind-to-key <i>ARG</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>edit-kbd-macro</code></td>
+	<td>C-x C-k e</td>
+	<td>Edit a keyboard macro.</td>
+	<td>(edit-kbd-macro <i>KEYS</i> &amp;optional <i>PREFIX FINISH-HOOK STORE-HOOK</i>)</td>
+      </tr>
+
+      <tr>
+	<td><code>kmacro-edit-lossage</code></td>
+	<td>C-x C-k l</td>
+	<td>Edit most recent 300 keystrokes as a keyboard macro.</td>
+	<td>(kmacro-edit-lossage)</td>
+      </tr>
+
     </table>
 
     <hr>
