@@ -1,0 +1,8 @@
+0ca139239 dev-libs/bctoolbox: Update to 5.055 from 4.3.0
+Fri Dec  3 11:15:15 CST 2021
+Merge Link: https://gitlab.exherbo.org/exherbo/arbor/-/merge_requests/2219
+ 
+04db9d8e media-sound/mpd: Update to 0.23.5 from 0.23.4
+Fri Dec  3 11:18:22 CST 2021
+Merge Link: https://gitlab.exherbo.org/exherbo/media/-/merge_requests/775
+ 
